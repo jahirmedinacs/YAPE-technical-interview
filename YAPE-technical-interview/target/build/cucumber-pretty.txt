@@ -1,0 +1,103 @@
+@EjemplosAutomatizacionApi
+Característica: Automatización de apis
+    Como colaborador de everis
+    Quiero redactar y automatizar APIs Booker
+    Para obtener valores y respuestas de las solucitudes ejecutadas
+
+  @EjemplosAutomatizacionApi @Restful-Booker @CreateTokenHappyPath
+  Escenario: Crear Token estático correctamente                     [90m# src/test/resources/features/EjemplosAutomatizacionApi.feature:10[0m
+    [32mDado [0m[32mque configuro las cabeceras[0m                                [90m# EjemplosAutomatizacionApiStepDefinition.configuroLasCabeceras(DataTable)[0m
+    [32mCuando [0m[32mconfiguro el body del servicio: "[0m[32m[1mcrearToken[0m[32m"[0m             [90m# EjemplosAutomatizacionApiStepDefinition.configuroElBodyDelServicio(String,DataTable)[0m
+    [32mY [0m[32mejecuto el servicio con la configuracion del body y cabeceras[0m [90m# EjemplosAutomatizacionApiStepDefinition.ejecutoElServicioConLaConfiguracionDelBodyYCabeceras(DataTable)[0m
+    [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m200[0m[32m"[0m            [90m# EjemplosAutomatizacionApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+  @EjemplosAutomatizacionApi @Restful-Booker @CreateTokenUnHappyPath
+  Escenario: Crear Token estático correctamente                     [90m# src/test/resources/features/EjemplosAutomatizacionApi.feature:24[0m
+    [32mDado [0m[32mque configuro las cabeceras[0m                                [90m# EjemplosAutomatizacionApiStepDefinition.configuroLasCabeceras(DataTable)[0m
+    [32mCuando [0m[32mconfiguro el body del servicio: "[0m[32m[1mcrearToken[0m[32m"[0m             [90m# EjemplosAutomatizacionApiStepDefinition.configuroElBodyDelServicio(String,DataTable)[0m
+    [32mY [0m[32mejecuto el servicio con la configuracion del body y cabeceras[0m [90m# EjemplosAutomatizacionApiStepDefinition.ejecutoElServicioConLaConfiguracionDelBodyYCabeceras(DataTable)[0m
+    [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m404[0m[32m"[0m            [90m# EjemplosAutomatizacionApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+  @EjemplosAutomatizacionApi @Restful-Booker @ObtenerLibrosHappyPath
+  Escenario: Obtener libros correctamente                       [90m# src/test/resources/features/EjemplosAutomatizacionApi.feature:48[0m
+    [32mDado [0m[32mque configuro las cabeceras[0m                            [90m# EjemplosAutomatizacionApiStepDefinition.configuroLasCabeceras(DataTable)[0m
+    [32mY [0m[32mejecuto el servicio con la configuracion de las cabeceras[0m [90m# EjemplosAutomatizacionApiStepDefinition.ejecutoElServicioConLaConfiguracionDeLasCabeceras(DataTable)[0m
+    [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m200[0m[32m"[0m        [90m# EjemplosAutomatizacionApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+  @EjemplosAutomatizacionApi @Restful-Booker @ObtenerLibrosUnHappyPath
+  Escenario: Obtener libros correctamente                       [90m# src/test/resources/features/EjemplosAutomatizacionApi.feature:61[0m
+    [32mDado [0m[32mque configuro las cabeceras[0m                            [90m# EjemplosAutomatizacionApiStepDefinition.configuroLasCabeceras(DataTable)[0m
+    [32mY [0m[32mejecuto el servicio con la configuracion de las cabeceras[0m [90m# EjemplosAutomatizacionApiStepDefinition.ejecutoElServicioConLaConfiguracionDeLasCabeceras(DataTable)[0m
+    [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m404[0m[32m"[0m        [90m# EjemplosAutomatizacionApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+  @EjemplosAutomatizacionApi @Restful-Booker @ObtenerLibrosIdEspecificoHappyPath
+  Escenario: Obtener libros por un id especifico correctamente  [90m# src/test/resources/features/EjemplosAutomatizacionApi.feature:75[0m
+    [32mDado [0m[32mque configuro las cabeceras[0m                            [90m# EjemplosAutomatizacionApiStepDefinition.configuroLasCabeceras(DataTable)[0m
+    [32mY [0m[32mejecuto el servicio con la configuracion de las cabeceras[0m [90m# EjemplosAutomatizacionApiStepDefinition.ejecutoElServicioConLaConfiguracionDeLasCabeceras(DataTable)[0m
+    [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m200[0m[32m"[0m        [90m# EjemplosAutomatizacionApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+  @EjemplosAutomatizacionApi @Restful-Booker @ObtenerLibrosIdEspecificoUnHappyPath
+  Escenario: Obtener libros por un id especifico correctamente  [90m# src/test/resources/features/EjemplosAutomatizacionApi.feature:88[0m
+    [32mDado [0m[32mque configuro las cabeceras[0m                            [90m# EjemplosAutomatizacionApiStepDefinition.configuroLasCabeceras(DataTable)[0m
+    [32mY [0m[32mejecuto el servicio con la configuracion de las cabeceras[0m [90m# EjemplosAutomatizacionApiStepDefinition.ejecutoElServicioConLaConfiguracionDeLasCabeceras(DataTable)[0m
+    [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m404[0m[32m"[0m        [90m# EjemplosAutomatizacionApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+  @EjemplosAutomatizacionApi @Restful-Booker @CreateBookingHappyPath
+  Escenario: Crear una libreria correctamente                       [90m# src/test/resources/features/EjemplosAutomatizacionApi.feature:102[0m
+    [32mDado [0m[32mque configuro las cabeceras[0m                                [90m# EjemplosAutomatizacionApiStepDefinition.configuroLasCabeceras(DataTable)[0m
+    [32mCuando [0m[32mconfiguro el body del servicio: "[0m[32m[1mcrearLibro[0m[32m"[0m             [90m# EjemplosAutomatizacionApiStepDefinition.configuroElBodyDelServicio(String,DataTable)[0m
+    [32mY [0m[32mejecuto el servicio con la configuracion del body y cabeceras[0m [90m# EjemplosAutomatizacionApiStepDefinition.ejecutoElServicioConLaConfiguracionDelBodyYCabeceras(DataTable)[0m
+    [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m200[0m[32m"[0m            [90m# EjemplosAutomatizacionApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+  @EjemplosAutomatizacionApi @Restful-Booker @CreateBookingUnHappyPath
+  Escenario: Crear una libreria correctamente                       [90m# src/test/resources/features/EjemplosAutomatizacionApi.feature:125[0m
+    [32mDado [0m[32mque configuro las cabeceras[0m                                [90m# EjemplosAutomatizacionApiStepDefinition.configuroLasCabeceras(DataTable)[0m
+    [32mCuando [0m[32mconfiguro el body del servicio: "[0m[32m[1mcrearLibro[0m[32m"[0m             [90m# EjemplosAutomatizacionApiStepDefinition.configuroElBodyDelServicio(String,DataTable)[0m
+    [32mY [0m[32mejecuto el servicio con la configuracion del body y cabeceras[0m [90m# EjemplosAutomatizacionApiStepDefinition.ejecutoElServicioConLaConfiguracionDelBodyYCabeceras(DataTable)[0m
+    [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m404[0m[32m"[0m            [90m# EjemplosAutomatizacionApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+  @EjemplosAutomatizacionApi @Restful-Booker @ActualizarLibroHappyPath
+  Escenario: Actualizar un libro correctamente con token actualizado [90m# src/test/resources/features/EjemplosAutomatizacionApi.feature:149[0m
+    [32mDado [0m[32mque configuro las cabeceras[0m                                 [90m# EjemplosAutomatizacionApiStepDefinition.configuroLasCabeceras(DataTable)[0m
+    [32mCuando [0m[32mconfiguro el body del servicio: "[0m[32m[1mcrearLibro[0m[32m"[0m              [90m# EjemplosAutomatizacionApiStepDefinition.configuroElBodyDelServicio(String,DataTable)[0m
+    [32mY [0m[32mejecuto el servicio con la configuracion del body y cabeceras[0m  [90m# EjemplosAutomatizacionApiStepDefinition.ejecutoElServicioConLaConfiguracionDelBodyYCabeceras(DataTable)[0m
+    [31mEntonces [0m[31mvalido que el codigo de respuesta sea "[0m[31m[1m200[0m[31m"[0m             [90m# EjemplosAutomatizacionApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+      [31mjava.lang.AssertionError: El código de respuesta, no es el adecuado.
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at com.bdd.api.stepdefinition.EjemplosAutomatizacionApiStepDefinition.validoQueElCodigoDeRespuestaSea(EjemplosAutomatizacionApiStepDefinition.java:40)
+	at ✽.valido que el codigo de respuesta sea "200"(src/test/resources/features/EjemplosAutomatizacionApi.feature:167)
+[0m
+
+  @EjemplosAutomatizacionApi @Restful-Booker @ActualizarLibroUnHappyPath
+  Escenario: Actualizar un libro correctamente                      [90m# src/test/resources/features/EjemplosAutomatizacionApi.feature:170[0m
+    [32mDado [0m[32mque configuro las cabeceras[0m                                [90m# EjemplosAutomatizacionApiStepDefinition.configuroLasCabeceras(DataTable)[0m
+    [32mCuando [0m[32mconfiguro el body del servicio: "[0m[32m[1mcrearLibro[0m[32m"[0m             [90m# EjemplosAutomatizacionApiStepDefinition.configuroElBodyDelServicio(String,DataTable)[0m
+    [32mY [0m[32mejecuto el servicio con la configuracion del body y cabeceras[0m [90m# EjemplosAutomatizacionApiStepDefinition.ejecutoElServicioConLaConfiguracionDelBodyYCabeceras(DataTable)[0m
+    [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m403[0m[32m"[0m            [90m# EjemplosAutomatizacionApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+  @EjemplosAutomatizacionApi @Restful-Booker @PartialUpdateBookingHappyPath
+  Escenario: Actualiza una reserva actual con una carga útil parcial correctamente [90m# src/test/resources/features/EjemplosAutomatizacionApi.feature:192[0m
+    [32mDado [0m[32mque configuro las cabeceras[0m                                               [90m# EjemplosAutomatizacionApiStepDefinition.configuroLasCabeceras(DataTable)[0m
+    [32mCuando [0m[32mconfiguro el body del servicio: "[0m[32m[1mcrearLibro_totalprice[0m[32m"[0m                 [90m# EjemplosAutomatizacionApiStepDefinition.configuroElBodyDelServicio(String,DataTable)[0m
+    [32mY [0m[32mejecuto el servicio con la configuracion del body y cabeceras[0m                [90m# EjemplosAutomatizacionApiStepDefinition.ejecutoElServicioConLaConfiguracionDelBodyYCabeceras(DataTable)[0m
+    [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m200[0m[32m"[0m                           [90m# EjemplosAutomatizacionApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+  @EjemplosAutomatizacionApi @Restful-Booker @PartialUpdateBookingUnHappyPath
+  Escenario: Actualiza una reserva actual con una carga útil parcial correctamente [90m# src/test/resources/features/EjemplosAutomatizacionApi.feature:207[0m
+    [32mDado [0m[32mque configuro las cabeceras[0m                                               [90m# EjemplosAutomatizacionApiStepDefinition.configuroLasCabeceras(DataTable)[0m
+    [32mCuando [0m[32mconfiguro el body del servicio: "[0m[32m[1mcrearLibro_totalprice[0m[32m"[0m                 [90m# EjemplosAutomatizacionApiStepDefinition.configuroElBodyDelServicio(String,DataTable)[0m
+    [32mY [0m[32mejecuto el servicio con la configuracion del body y cabeceras[0m                [90m# EjemplosAutomatizacionApiStepDefinition.ejecutoElServicioConLaConfiguracionDelBodyYCabeceras(DataTable)[0m
+    [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m404[0m[32m"[0m                           [90m# EjemplosAutomatizacionApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+  @EjemplosAutomatizacionApi @Restful-Booker @EliminarLibroHappyPath
+  Escenario: Eliminar un libro correctamente                    [90m# src/test/resources/features/EjemplosAutomatizacionApi.feature:223[0m
+    [32mDado [0m[32mque configuro las cabeceras[0m                            [90m# EjemplosAutomatizacionApiStepDefinition.configuroLasCabeceras(DataTable)[0m
+    [32mY [0m[32mejecuto el servicio con la configuracion de las cabeceras[0m [90m# EjemplosAutomatizacionApiStepDefinition.ejecutoElServicioConLaConfiguracionDeLasCabeceras(DataTable)[0m
+    [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m201[0m[32m"[0m        [90m# EjemplosAutomatizacionApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+  @EjemplosAutomatizacionApi @Restful-Booker @EliminarLibroUnHappyPath
+  Escenario: Eliminar un libro previamente eliminado correctamente [90m# src/test/resources/features/EjemplosAutomatizacionApi.feature:235[0m
+    [32mDado [0m[32mque configuro las cabeceras[0m                               [90m# EjemplosAutomatizacionApiStepDefinition.configuroLasCabeceras(DataTable)[0m
+    [32mY [0m[32mejecuto el servicio con la configuracion de las cabeceras[0m    [90m# EjemplosAutomatizacionApiStepDefinition.ejecutoElServicioConLaConfiguracionDeLasCabeceras(DataTable)[0m
+    [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m405[0m[32m"[0m           [90m# EjemplosAutomatizacionApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
