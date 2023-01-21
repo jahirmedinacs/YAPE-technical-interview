@@ -1,11 +1,11 @@
   #language: es
-  @EjemplosAutomatizacionApi
-  Característica: Automatización de apis
-    Como colaborador de everis
+  @YapeTechInterview
+  Característica: Automatización de APIS
+    Como interesado en realizar prueba tecnica
     Quiero redactar y automatizar APIs Booker
     Para obtener valores y respuestas de las solucitudes ejecutadas
 
-  #CREAR TOKEN
+  #0. CREAR TOKEN
     @Restful-Booker  @CreateTokenHappyPath
     Escenario: Crear Token estático correctamente
       Dado que configuro las cabeceras
@@ -33,15 +33,6 @@
         | tipo | url | metodo |
         | ux   | /au | post   |
       Entonces valido que el codigo de respuesta sea "404"
-
-
-  # 1. OBTENER ID DE LIBROS (GET) 2 ESCENARIOS: HAPPY Y UNHAPPY
-  # 2. OBTENER UN LIBRO POR  UN ID ESPECÍFICO  (GET) 2 ESCENARIOS: HAPPY Y UNHAPPY
-  # 3. BOOKING - CREATEBOOKING (POST) 2 ESCENARIOS: HAPPY Y UNHAPPY
-  # 4. BOOKING - UPDATE (PUT) 2 ESCENARIOS: HAPPY Y UNHAPPY
-  # 5. BOOKING - PARTIALUPDATEBOOKING (PATCH) 2 ESCENARIOS: HAPPY Y UNHAPPY
-  # 6. DELETEBOOKING (DELETE) 2 ESCENARIOS: HAPPY Y UNHAPPY
-
 
   # 1. OBTENER ID DE LIBROS (GET) 2 ESCENARIOS: HAPPY Y UNHAPPY
     @Restful-Booker  @ObtenerLibrosHappyPath
