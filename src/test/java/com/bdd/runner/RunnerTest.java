@@ -14,8 +14,8 @@ import org.junit.runner.RunWith;
         junit = {"--step-notifications"},
         glue = {"com.bdd"}
 //        ,tags = {"@Restful-Booker"}
-        ,tags = {"@BookingAutomation"}
-//        ,tags = {"@Restful-Booker or @BookingAutomation"}
+//        ,tags = {"@BookingAutomation"}
+        ,tags = {"@Restful-Booker or @BookingAutomation"}
 )
 
 public class RunnerTest {
