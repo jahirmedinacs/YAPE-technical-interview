@@ -13,6 +13,8 @@
         <serenity.version>2.1.7</serenity.version>
         <serenity.maven.version>2.1.7</serenity.maven.version>
         <serenity.cucumber.version>1.9.51</serenity.cucumber.version>
+        <encoding>UTF-8</encoding>
+        <webdriver.driver>appium</webdriver.driver>
     </properties>
 
     <dependencies>
@@ -51,7 +53,11 @@
             <artifactId>serenity-core</artifactId>
             <version>${serenity.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-junit</artifactId>
+            <version>${serenity.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.jayway.jsonpath</groupId>
             <artifactId>json-path</artifactId>
@@ -65,7 +71,7 @@
             <scope>compile</scope>
         </dependency>
 
-<!--        /////////////////////////////////////-->
+        <!--        /////////////////////////////////////-->
 
         <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
         <dependency>
@@ -74,7 +80,39 @@
             <version>4.3.3</version>
         </dependency>
 
+        <!-- //////////////////////////////// -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.7</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>1.7.0</version>
+        </dependency>
 
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>7.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>4.1.2</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -100,6 +138,14 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.18</version>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.18</version>
                 <configuration>
@@ -109,6 +155,9 @@
                     </includes>
                     <reuseForks>true</reuseForks>
                     <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+                    <systemPropertyVariables>
+                        <webdriver.driver>${webdriver.driver}</webdriver.driver>
+                    </systemPropertyVariables>
                 </configuration>
                 <executions>
                     <execution>
@@ -129,7 +178,15 @@
                         <artifactId>serenity-core</artifactId>
                         <version>${serenity.version}</version>
                     </dependency>
+<!--                    <dependency>-->
+<!--                        <groupId>net.serenity-bdd</groupId>-->
+<!--                        <artifactId>serenity-single-page-report</artifactId>-->
+<!--                        <version>${serenity.version}</version>-->
+<!--                    </dependency>-->
                 </dependencies>
+                <configuration>
+                    <reports>single-page-html</reports>
+                </configuration>
                 <executions>
                     <execution>
                         <id>serenity-reports</id>
@@ -148,6 +205,45 @@
                     <source>8</source>
                     <target>8</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>com.conf.PostExecution</mainClass>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>net.masterthought</groupId>
+                <artifactId>maven-cucumber-reporting</artifactId>
+                <version>3.11.0</version>
+                <executions>
+                    <execution>
+                        <id>cucumber-reports</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <projectName>CucumberReport</projectName>
+                            <outputDirectory>${project.build.directory}/site</outputDirectory>
+                            <cucumberOutput>${project.build.directory}/build/cucumber.json</cucumberOutput>
+                            <!--<jsonFiles>
+                                <param>**/*.json</param>
+                            </jsonFiles>
+                            <checkBuildResult>true</checkBuildResult>-->
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
