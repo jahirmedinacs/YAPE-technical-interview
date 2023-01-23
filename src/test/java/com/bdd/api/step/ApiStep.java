@@ -6,7 +6,8 @@ package com.bdd.api.step;
 import com.bdd.util.lib.ServiceDOM;
 import com.bdd.util.UtilApi;
 
-import cucumber.api.DataTable;
+//import cucumber.api.DataTable;
+import io.cucumber.datatable.DataTable;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
 import net.thucydides.core.annotations.Step;

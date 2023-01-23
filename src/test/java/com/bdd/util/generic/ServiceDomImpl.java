@@ -1,7 +1,7 @@
 package com.bdd.util.generic;
 
 import com.bdd.util.builder.ApiConfig;
-import cucumber.api.DataTable;
+import io.cucumber.datatable.DataTable;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
 

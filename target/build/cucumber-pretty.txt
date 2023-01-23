@@ -1,0 +1,358 @@
+
+@BookingAutomation @BookingAutomation @HappyPath
+Esquema del escenario: Carga correcta de Booking.com [90m# src/test/resources/features/BookingAPK.feature:18[0m
+  [32mDado [0m[32mque cargo el aplicativo de Booking[0m            [90m# com.bdd.ui.stepdefinition.BookingStepDefinition.cargoElAplicativoDeGoogleChrome()[0m
+  [31mDado [0m[31mSelecciono y Escribo como destino "[0m[31m[1mcusco[0m[31m"[0m     [90m# com.bdd.ui.stepdefinition.BookingStepDefinition.seleccionoYEscriboDestino(java.lang.String)[0m
+      [31mnet.serenitybdd.core.exceptions.SerenityManagedException
+	at io.appium.java_client.pagefactory.utils.ProxyFactory.getEnhancedProxy(ProxyFactory.java:53)
+	at io.appium.java_client.pagefactory.utils.ProxyFactory.getEnhancedProxy(ProxyFactory.java:33)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.proxyForAnElement(AppiumFieldDecorator.java:208)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.access$000(AppiumFieldDecorator.java:60)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator$1.proxyForLocator(AppiumFieldDecorator.java:99)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:63)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDecorator.java:146)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:111)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:103)
+	at com.bdd.generic.MobileDriverDOM.<init>(MobileDriverDOM.java:19)
+	at com.bdd.ui.view.WelcomeToBookingView.<init>(WelcomeToBookingView.java:12)
+	at com.bdd.ui.step.BookingStep.welcomeToBookingView(BookingStep.java:10)
+	at com.bdd.ui.step.BookingStep.seleccionoYEscriboDestino(BookingStep.java:16)
+	at com.bdd.ui.step.BookingStep$ByteBuddy$3uVgdzXL.seleccionoYEscriboDestino$accessor$sbKVDnVn(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:406)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:191)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:84)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at com.bdd.ui.step.BookingStep$ByteBuddy$3uVgdzXL.seleccionoYEscriboDestino(Unknown Source)
+	at com.bdd.ui.stepdefinition.BookingStepDefinition.seleccionoYEscriboDestino(BookingStepDefinition.java:53)
+	at ✽.Selecciono y Escribo como destino "cusco"(file:///home/jahirmedinacs/Documents/repos/Work/YAPE-technical-interview/src/test/resources/features/BookingAPK.feature:13)
+Caused by: java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassVisitor.<init>(Unknown Source)
+	at net.sf.cglib.core.DebuggingClassWriter.<init>(DebuggingClassWriter.java:49)
+	at net.sf.cglib.core.DefaultGeneratorStrategy.getClassVisitor(DefaultGeneratorStrategy.java:30)
+	at net.sf.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:24)
+	at net.sf.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:332)
+	at net.sf.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:96)
+	at net.sf.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:94)
+	at net.sf.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at net.sf.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61)
+	at net.sf.cglib.core.internal.LoadingCache.get(LoadingCache.java:34)
+	at net.sf.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:119)
+	at net.sf.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:294)
+	at net.sf.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221)
+	at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:174)
+	at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:153)
+	at net.sf.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73)
+	at io.appium.java_client.pagefactory.utils.ProxyFactory.getEnhancedProxy(ProxyFactory.java:53)
+	at io.appium.java_client.pagefactory.utils.ProxyFactory.getEnhancedProxy(ProxyFactory.java:33)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.proxyForAnElement(AppiumFieldDecorator.java:208)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.access$000(AppiumFieldDecorator.java:60)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator$1.proxyForLocator(AppiumFieldDecorator.java:99)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:63)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDecorator.java:146)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:111)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:103)
+	at com.bdd.generic.MobileDriverDOM.<init>(MobileDriverDOM.java:19)
+	at com.bdd.ui.view.WelcomeToBookingView.<init>(WelcomeToBookingView.java:12)
+	at com.bdd.ui.step.BookingStep.welcomeToBookingView(BookingStep.java:10)
+	at com.bdd.ui.step.BookingStep.seleccionoYEscriboDestino(BookingStep.java:16)
+	at com.bdd.ui.step.BookingStep$ByteBuddy$3uVgdzXL.seleccionoYEscriboDestino$accessor$sbKVDnVn(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:406)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:191)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:84)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at com.bdd.ui.step.BookingStep$ByteBuddy$3uVgdzXL.seleccionoYEscriboDestino(Unknown Source)
+	at com.bdd.ui.stepdefinition.BookingStepDefinition.seleccionoYEscriboDestino(BookingStepDefinition.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:288)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+[0m
+
+@TechInterview @Restful-Booker @CreateTokenHappyPath
+Escenario: Crear Token estático correctamente                     [90m# src/test/resources/features/Restful-BookerAPI.feature:10[0m
+  [32mDado [0m[32mque configuro las cabeceras[0m                                [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | cabeceras    | valor            |
+    | Content-Type | application/json |
+  [32mCuando [0m[32mconfiguro el body del servicio: "[0m[32m[1mcrearToken[0m[32m"[0m             [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroElBodyDelServicio(java.lang.String,io.cucumber.datatable.DataTable)[0m
+    | key      | valor       |
+    | username | admin       |
+    | password | password123 |
+  [32mY [0m[32mejecuto el servicio con la configuracion del body y cabeceras[0m [90m# com.bdd.api.stepdefinition.ApiStepDefinition.ejecutoElServicioConLaConfiguracionDelBodyYCabeceras(io.cucumber.datatable.DataTable)[0m
+    | tipo | url   | metodo |
+    | ux   | /auth | post   |
+  [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m200[0m[32m"[0m            [90m# com.bdd.api.stepdefinition.ApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+@TechInterview @Restful-Booker @CreateTokenUnHappyPath
+Escenario: Crear Token estático correctamente                     [90m# src/test/resources/features/Restful-BookerAPI.feature:24[0m
+  [32mDado [0m[32mque configuro las cabeceras[0m                                [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | cabeceras    | valor            |
+    | Content-Type | application/json |
+  [32mCuando [0m[32mconfiguro el body del servicio: "[0m[32m[1mcrearToken[0m[32m"[0m             [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroElBodyDelServicio(java.lang.String,io.cucumber.datatable.DataTable)[0m
+    | key      | valor       |
+    | username | admin       |
+    | password | password123 |
+  [32mY [0m[32mejecuto el servicio con la configuracion del body y cabeceras[0m [90m# com.bdd.api.stepdefinition.ApiStepDefinition.ejecutoElServicioConLaConfiguracionDelBodyYCabeceras(io.cucumber.datatable.DataTable)[0m
+    | tipo | url | metodo |
+    | ux   | /au | post   |
+  [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m404[0m[32m"[0m            [90m# com.bdd.api.stepdefinition.ApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+@TechInterview @Restful-Booker @ObtenerLibrosHappyPath
+Escenario: Obtener libros correctamente                       [90m# src/test/resources/features/Restful-BookerAPI.feature:39[0m
+  [32mDado [0m[32mque configuro las cabeceras[0m                            [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | cabeceras       | valor                 |
+    | User-Agent      | PostmanRuntime/7.28.3 |
+    | Accept          | */*                   |
+    | Accept-Encoding | gzip, deflate, br     |
+    | Connection      | keep-alive            |
+  [32mY [0m[32mejecuto el servicio con la configuracion de las cabeceras[0m [90m# com.bdd.api.stepdefinition.ApiStepDefinition.ejecutoElServicioConLaConfiguracionDeLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | tipo | url      | metodo |
+    | ux   | /booking | get    |
+  [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m200[0m[32m"[0m        [90m# com.bdd.api.stepdefinition.ApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+@TechInterview @Restful-Booker @ObtenerLibrosUnHappyPath
+Escenario: Obtener libros correctamente                       [90m# src/test/resources/features/Restful-BookerAPI.feature:52[0m
+  [32mDado [0m[32mque configuro las cabeceras[0m                            [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | cabeceras       | valor                 |
+    | User-Agent      | PostmanRuntime/7.28.3 |
+    | Accept          | */*                   |
+    | Accept-Encoding | gzip, deflate, br     |
+    | Connection      | keep-alive            |
+  [32mY [0m[32mejecuto el servicio con la configuracion de las cabeceras[0m [90m# com.bdd.api.stepdefinition.ApiStepDefinition.ejecutoElServicioConLaConfiguracionDeLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | tipo | url    | metodo |
+    | ux   | /bokin | get    |
+  [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m404[0m[32m"[0m        [90m# com.bdd.api.stepdefinition.ApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+@TechInterview @Restful-Booker @ObtenerLibrosIdEspecificoHappyPath
+Escenario: Obtener libros por un id especifico correctamente  [90m# src/test/resources/features/Restful-BookerAPI.feature:66[0m
+  [32mDado [0m[32mque configuro las cabeceras[0m                            [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | cabeceras       | valor                 |
+    | User-Agent      | PostmanRuntime/7.28.3 |
+    | Accept          | */*                   |
+    | Accept-Encoding | gzip, deflate, br     |
+    | Connection      | keep-alive            |
+  [32mY [0m[32mejecuto el servicio con la configuracion de las cabeceras[0m [90m# com.bdd.api.stepdefinition.ApiStepDefinition.ejecutoElServicioConLaConfiguracionDeLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | tipo | url         | metodo |
+    | ux   | /booking/10 | get    |
+  [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m200[0m[32m"[0m        [90m# com.bdd.api.stepdefinition.ApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+@TechInterview @Restful-Booker @ObtenerLibrosIdEspecificoUnHappyPath
+Escenario: Obtener libros por un id especifico correctamente  [90m# src/test/resources/features/Restful-BookerAPI.feature:79[0m
+  [32mDado [0m[32mque configuro las cabeceras[0m                            [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | cabeceras       | valor                 |
+    | User-Agent      | PostmanRuntime/7.28.3 |
+    | Accept          | */*                   |
+    | Accept-Encoding | gzip, deflate, br     |
+    | Connection      | keep-alive            |
+  [32mY [0m[32mejecuto el servicio con la configuracion de las cabeceras[0m [90m# com.bdd.api.stepdefinition.ApiStepDefinition.ejecutoElServicioConLaConfiguracionDeLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | tipo | url        | metodo |
+    | ux   | /bookin/20 | get    |
+  [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m404[0m[32m"[0m        [90m# com.bdd.api.stepdefinition.ApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+@TechInterview @Restful-Booker @CreateBookingHappyPath
+Escenario: Crear una libreria correctamente                       [90m# src/test/resources/features/Restful-BookerAPI.feature:93[0m
+  [32mDado [0m[32mque configuro las cabeceras[0m                                [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | cabeceras       | valor                 |
+    | Content-Type    | application/json      |
+    | User-Agent      | PostmanRuntime/7.28.3 |
+    | Accept          | */*                   |
+    | Accept-Encoding | gzip, deflate, br     |
+    | Connection      | keep-alive            |
+  [32mCuando [0m[32mconfiguro el body del servicio: "[0m[32m[1mcrearLibro[0m[32m"[0m             [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroElBodyDelServicio(java.lang.String,io.cucumber.datatable.DataTable)[0m
+    | key                   | valor      |
+    | firstname             | EJEMPLO    |
+    | additionalneeds       | Breakfast  |
+    | bookingdates.checkin  | 2020-01-01 |
+    | bookingdates.checkout | 2021-06-01 |
+    | totalprice            | 123        |
+    | depositpaid           | true       |
+    | lastname              | API TEST   |
+  [32mY [0m[32mejecuto el servicio con la configuracion del body y cabeceras[0m [90m# com.bdd.api.stepdefinition.ApiStepDefinition.ejecutoElServicioConLaConfiguracionDelBodyYCabeceras(io.cucumber.datatable.DataTable)[0m
+    | tipo | url      | metodo |
+    | ux   | /booking | post   |
+  [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m200[0m[32m"[0m            [90m# com.bdd.api.stepdefinition.ApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+@TechInterview @Restful-Booker @CreateBookingUnHappyPath
+Escenario: Crear una libreria correctamente                       [90m# src/test/resources/features/Restful-BookerAPI.feature:116[0m
+  [32mDado [0m[32mque configuro las cabeceras[0m                                [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | cabeceras       | valor                 |
+    | Content-Type    | application/json      |
+    | User-Agent      | PostmanRuntime/7.28.3 |
+    | Accept          | */*                   |
+    | Accept-Encoding | gzip, deflate, br     |
+    | Connection      | keep-alive            |
+  [32mCuando [0m[32mconfiguro el body del servicio: "[0m[32m[1mcrearLibro[0m[32m"[0m             [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroElBodyDelServicio(java.lang.String,io.cucumber.datatable.DataTable)[0m
+    | key                   | valor      |
+    | firstname             | LIBRO_O1   |
+    | additionalneeds       | Breakfast  |
+    | bookingdates.checkin  | 2020-01-01 |
+    | bookingdates.checkout | 2021-06-01 |
+    | totalprice            | 123        |
+    | depositpaid           | true       |
+    | lastname              | API TEST   |
+  [32mY [0m[32mejecuto el servicio con la configuracion del body y cabeceras[0m [90m# com.bdd.api.stepdefinition.ApiStepDefinition.ejecutoElServicioConLaConfiguracionDelBodyYCabeceras(io.cucumber.datatable.DataTable)[0m
+    | tipo | url          | metodo |
+    | ux   | /booking/new | post   |
+  [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m404[0m[32m"[0m            [90m# com.bdd.api.stepdefinition.ApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+@TechInterview @Restful-Booker @ActualizarLibroHappyPath
+Escenario: Actualizar un libro correctamente con token actualizado [90m# src/test/resources/features/Restful-BookerAPI.feature:140[0m
+  [32mDado [0m[32mque configuro las cabeceras[0m                                 [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | cabeceras    | valor                 |
+    | Content-Type | application/json      |
+    | Accept       | application/json      |
+    | Cookie       | token=9415ce1a20ed026 |
+  [32mCuando [0m[32mconfiguro el body del servicio: "[0m[32m[1mcrearLibro[0m[32m"[0m              [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroElBodyDelServicio(java.lang.String,io.cucumber.datatable.DataTable)[0m
+    | key                   | valor        |
+    | firstname             | Libro_creado |
+    | lastname              | API TEST     |
+    | totalprice            | 123          |
+    | depositpaid           | true         |
+    | bookingdates.checkin  | 2020-01-01   |
+    | bookingdates.checkout | 2021-06-01   |
+    | additionalneeds       | Breakfast    |
+  [32mY [0m[32mejecuto el servicio con la configuracion del body y cabeceras[0m  [90m# com.bdd.api.stepdefinition.ApiStepDefinition.ejecutoElServicioConLaConfiguracionDelBodyYCabeceras(io.cucumber.datatable.DataTable)[0m
+    | tipo | url        | metodo |
+    | ux   | /booking/3 | put    |
+  [31mEntonces [0m[31mvalido que el codigo de respuesta sea "[0m[31m[1m200[0m[31m"[0m             [90m# com.bdd.api.stepdefinition.ApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+      [31mjava.lang.AssertionError: El código de respuesta, no es el adecuado.
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at com.bdd.api.stepdefinition.ApiStepDefinition.validoQueElCodigoDeRespuestaSea(ApiStepDefinition.java:47)
+	at ✽.valido que el codigo de respuesta sea "200"(file:///home/jahirmedinacs/Documents/repos/Work/YAPE-technical-interview/src/test/resources/features/Restful-BookerAPI.feature:158)
+[0m
+
+@TechInterview @Restful-Booker @ActualizarLibroUnHappyPath
+Escenario: Actualizar un libro correctamente                      [90m# src/test/resources/features/Restful-BookerAPI.feature:161[0m
+  [32mDado [0m[32mque configuro las cabeceras[0m                                [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | cabeceras    | valor            |
+    | Content-Type | application/json |
+    | Accept       | application/json |
+    | Cookie       | token=abc        |
+  [32mCuando [0m[32mconfiguro el body del servicio: "[0m[32m[1mcrearLibro[0m[32m"[0m             [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroElBodyDelServicio(java.lang.String,io.cucumber.datatable.DataTable)[0m
+    | key                   | valor        |
+    | firstname             | Libro_creado |
+    | lastname              | API TEST     |
+    | totalprice            | 123          |
+    | depositpaid           | true         |
+    | bookingdates.checkin  | 2020-01-01   |
+    | bookingdates.checkout | 2021-06-01   |
+    | additionalneeds       | Breakfast    |
+  [32mY [0m[32mejecuto el servicio con la configuracion del body y cabeceras[0m [90m# com.bdd.api.stepdefinition.ApiStepDefinition.ejecutoElServicioConLaConfiguracionDelBodyYCabeceras(io.cucumber.datatable.DataTable)[0m
+    | tipo | url        | metodo |
+    | ux   | /booking/3 | put    |
+  [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m403[0m[32m"[0m            [90m# com.bdd.api.stepdefinition.ApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+@TechInterview @Restful-Booker @PartialUpdateBookingHappyPath
+Escenario: Actualiza una reserva actual con una carga útil parcial correctamente [90m# src/test/resources/features/Restful-BookerAPI.feature:183[0m
+  [32mDado [0m[32mque configuro las cabeceras[0m                                               [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | cabeceras     | valor                          |
+    | Content-Type  | application/json               |
+    | Authorization | Basic YWRtaW46cGFzc3dvcmQxMjM= |
+    | Cookie        | token=7a5fa25ad30e529          |
+  [32mCuando [0m[32mconfiguro el body del servicio: "[0m[32m[1mcrearLibro_totalprice[0m[32m"[0m                 [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroElBodyDelServicio(java.lang.String,io.cucumber.datatable.DataTable)[0m
+    | key        | valor  |
+    | totalprice | 345345 |
+  [32mY [0m[32mejecuto el servicio con la configuracion del body y cabeceras[0m                [90m# com.bdd.api.stepdefinition.ApiStepDefinition.ejecutoElServicioConLaConfiguracionDelBodyYCabeceras(io.cucumber.datatable.DataTable)[0m
+    | tipo | url        | metodo |
+    | ux   | /booking/3 | patch  |
+  [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m200[0m[32m"[0m                           [90m# com.bdd.api.stepdefinition.ApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+@TechInterview @Restful-Booker @PartialUpdateBookingUnHappyPath
+Escenario: Actualiza una reserva actual con una carga útil parcial correctamente [90m# src/test/resources/features/Restful-BookerAPI.feature:198[0m
+  [32mDado [0m[32mque configuro las cabeceras[0m                                               [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | cabeceras     | valor                          |
+    | Content-Type  | application/json               |
+    | Authorization | Basic YWRtaW46cGFzc3dvcmQxMjM= |
+    | Cookie        | token=7a5fa25ad30e529          |
+  [32mCuando [0m[32mconfiguro el body del servicio: "[0m[32m[1mcrearLibro_totalprice[0m[32m"[0m                 [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroElBodyDelServicio(java.lang.String,io.cucumber.datatable.DataTable)[0m
+    | key        | valor  |
+    | totalprice | 345345 |
+  [32mY [0m[32mejecuto el servicio con la configuracion del body y cabeceras[0m                [90m# com.bdd.api.stepdefinition.ApiStepDefinition.ejecutoElServicioConLaConfiguracionDelBodyYCabeceras(io.cucumber.datatable.DataTable)[0m
+    | tipo | url       | metodo |
+    | ux   | /bookin/3 | patch  |
+  [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m404[0m[32m"[0m                           [90m# com.bdd.api.stepdefinition.ApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+
+@TechInterview @Restful-Booker @EliminarLibroHappyPath
+Escenario: Eliminar un libro correctamente                    [90m# src/test/resources/features/Restful-BookerAPI.feature:214[0m
+  [32mDado [0m[32mque configuro las cabeceras[0m                            [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | cabeceras     | valor                          |
+    | Content-Type  | application/json               |
+    | Authorization | Basic YWRtaW46cGFzc3dvcmQxMjM= |
+    | Cookie        | token=26f19d37551dce0          |
+  [32mY [0m[32mejecuto el servicio con la configuracion de las cabeceras[0m [90m# com.bdd.api.stepdefinition.ApiStepDefinition.ejecutoElServicioConLaConfiguracionDeLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | tipo | url        | metodo |
+    | ux   | /booking/5 | delete |
+  [31mEntonces [0m[31mvalido que el codigo de respuesta sea "[0m[31m[1m201[0m[31m"[0m        [90m# com.bdd.api.stepdefinition.ApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m
+      [31mjava.lang.AssertionError: El código de respuesta, no es el adecuado.
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at com.bdd.api.stepdefinition.ApiStepDefinition.validoQueElCodigoDeRespuestaSea(ApiStepDefinition.java:47)
+	at ✽.valido que el codigo de respuesta sea "201"(file:///home/jahirmedinacs/Documents/repos/Work/YAPE-technical-interview/src/test/resources/features/Restful-BookerAPI.feature:223)
+[0m
+
+@TechInterview @Restful-Booker @EliminarLibroUnHappyPath
+Escenario: Eliminar un libro previamente eliminado correctamente [90m# src/test/resources/features/Restful-BookerAPI.feature:226[0m
+  [32mDado [0m[32mque configuro las cabeceras[0m                               [90m# com.bdd.api.stepdefinition.ApiStepDefinition.configuroLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | cabeceras     | valor                          |
+    | Content-Type  | application/json               |
+    | Authorization | Basic YWRtaW46cGFzc3dvcmQxMjM= |
+    | Cookie        | token=26f19d37551dce0          |
+  [32mY [0m[32mejecuto el servicio con la configuracion de las cabeceras[0m    [90m# com.bdd.api.stepdefinition.ApiStepDefinition.ejecutoElServicioConLaConfiguracionDeLasCabeceras(io.cucumber.datatable.DataTable)[0m
+    | tipo | url        | metodo |
+    | ux   | /booking/5 | delete |
+  [32mEntonces [0m[32mvalido que el codigo de respuesta sea "[0m[32m[1m405[0m[32m"[0m           [90m# com.bdd.api.stepdefinition.ApiStepDefinition.validoQueElCodigoDeRespuestaSea(int)[0m

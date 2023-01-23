@@ -2,7 +2,8 @@ package com.bdd.util;
 
 import com.bdd.Constant;
 import com.bdd.MobileDriverManager;
-import cucumber.api.Scenario;
+//import cucumber.api.Scenario;
+import io.cucumber.java.Scenario;
 import net.serenitybdd.core.Serenity;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -24,7 +25,7 @@ public class UtilMobile {
 
     public static void takeScreenShotMobile(Scenario scenario, WebDriver driver) {
         byte[] screenshoot = (byte[]) ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-        scenario.embed(screenshoot, "image/png");
+        scenario.attach(screenshoot, "image/png", "");
     }
 
 

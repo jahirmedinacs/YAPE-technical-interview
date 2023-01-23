@@ -11,12 +11,12 @@ public class BookingStep {
     }
 
     public void seleccionoYEscriboDestino(String destino) {
-        UtilMobile.screenShotViewPhone();
+//        UtilMobile.screenShotViewPhone();
 
         welcomeToBookingView().clickDestinationTextBox();
         welcomeToBookingView().writeDestinationTextBox(destino);
 
-        UtilMobile.screenShotViewPhone();
+//        UtilMobile.screenShotViewPhone();
     }
 
 }

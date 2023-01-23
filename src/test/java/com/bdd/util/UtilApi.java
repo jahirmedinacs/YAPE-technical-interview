@@ -7,8 +7,12 @@ import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.Predicate;
 import com.jayway.jsonpath.spi.json.JsonOrgJsonProvider;
 import com.jayway.jsonpath.spi.mapper.JsonOrgMappingProvider;
-import cucumber.api.DataTable;
-import cucumber.api.Scenario;
+
+//import cucumber.api.DataTable;
+//import cucumber.api.Scenario;
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.Scenario;
+
 import io.restassured.response.Response;
 import io.restassured.specification.QueryableRequestSpecification;
 import net.serenitybdd.core.Serenity;
@@ -226,7 +230,7 @@ public class UtilApi {
         String evidence = scenarioDetail + "\n" + division + "\n" + request + "\n" + division + "\n" + response;
         logger(UtilApi.class).log(Level.INFO, "Evidencia adjunta");
         logger(UtilApi.class).log(Level.INFO, evidence);
-        scenario.embed(evidence.getBytes(), "application/json");
+        scenario.attach(evidence.getBytes(), "application/json", "");
     }
 
     public static String getCurrentDateWithFormat(String format) {

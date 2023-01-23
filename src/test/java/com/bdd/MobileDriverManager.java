@@ -1,10 +1,11 @@
 package com.bdd;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
+//import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import net.thucydides.core.util.EnvironmentVariables;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
@@ -15,7 +16,7 @@ public class MobileDriverManager {
 
     private static AppiumDriver appiumDriver;
     private  EnvironmentVariables environmentVariables;
-    private static AppiumDriver<MobileElement> driver;
+    private static AppiumDriver driver;
 
     public MobileDriverManager(EnvironmentVariables environmentVariables) {
         this.environmentVariables = environmentVariables;
@@ -40,7 +41,7 @@ public class MobileDriverManager {
         appiumDriver.manage().timeouts().implicitlyWait(30L , TimeUnit.SECONDS);
     }
 
-    public static AppiumDriver<MobileElement> getMobileDriver() {
+    public static AppiumDriver getMobileDriver() {
         return appiumDriver;
     }
 

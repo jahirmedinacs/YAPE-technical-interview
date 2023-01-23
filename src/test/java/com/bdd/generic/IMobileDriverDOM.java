@@ -1,14 +1,14 @@
 package com.bdd.generic;
 
-import io.appium.java_client.MobileElement;
+import org.openqa.selenium.WebElement;
 
 public interface IMobileDriverDOM {
 
-    void clickElement(MobileElement elemento);
+    void clickElement(WebElement elemento);
 
-    MobileElement esperarHastaElementoVisible(int tiempoSegundos, MobileElement elemento);
+    WebElement esperarHastaElementoVisible(int tiempoSegundos, WebElement elemento);
 
-    boolean elementoPresente(MobileElement elemento);
+    boolean elementoPresente(WebElement elemento);
 
     void hacerTouchHaciaArriba();
 }

@@ -4,16 +4,20 @@ import com.bdd.Constant;
 import com.bdd.MobileDriverManager;
 import com.bdd.ui.step.BookingStep;
 import com.bdd.util.UtilMobile;
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
-import cucumber.api.java.es.Cuando;
-import cucumber.api.java.es.Dado;
-import cucumber.api.java.es.Entonces;
-import cucumber.api.java.es.Y;
+//import cucumber.api.Scenario;
+//import cucumber.api.java.After;
+//import cucumber.api.java.Before;
+//import cucumber.api.java.es.Cuando;
+//import cucumber.api.java.es.Dado;
+//import cucumber.api.java.es.Entonces;
+//import cucumber.api.java.es.Y;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.es.Dado;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.util.EnvironmentVariables;
+import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 
 import java.net.MalformedURLException;
 
