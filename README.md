@@ -2,7 +2,7 @@
 
 ## Video Demo (Ejecucion con Jenkins)
 
-[![Watch the video](https://img.youtube.com/vi/d3aXRyjUr9c/default.jpg)](https://youtu.be/d3aXRyjUr9c)
+[![Watch the video](https://img.youtube.com/vi/zOlobbafeEg/default.jpg)](https://youtu.be/zOlobbafeEg)
 
 ## Live Web Report (Reporte de Ejecucion de las Pruebas)
 
