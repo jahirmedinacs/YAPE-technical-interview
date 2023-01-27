@@ -2,7 +2,7 @@
 
 ## Video Demo (Ejecucion con Jenkins)
 
-[![Watch the video](https://img.youtube.com/vi/zOlobbafeEg/default.jpg)](https://youtu.be/zOlobbafeEg)
+[![Watch the video](./miniature-YTB.jpg)](https://youtu.be/zOlobbafeEg)
 
 ## Live Web Report (Reporte de Ejecucion de las Pruebas)
 
