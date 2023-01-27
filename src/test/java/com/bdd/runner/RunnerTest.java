@@ -11,12 +11,8 @@ import org.junit.runner.RunWith;
         "pretty:target/build/cucumber-pretty.txt",
         "json:target/build/cucumber.json"},
         features = {"src/test/resources/features"},
-//        junit = {"--step-notifications"},
         glue = {"com.bdd"}
-//        ,tags = {"@Restful-Booker"}
-//        ,tags = {"@BookingAutomation"}
-//        ,tags = "@Restful-Booker or @BookingAutomation"
-        ,tags = "@BookingAutomation and @HappyPath"
+        ,tags = "@Restful-Booker or @BookingAutomation"
 )
 
 public class RunnerTest {
