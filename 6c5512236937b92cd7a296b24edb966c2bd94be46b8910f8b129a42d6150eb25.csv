@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Automatización de apis","Crear Token estático correctamente","SUCCESS","2023-01-27T02:07:00.32417117-05:00[America/Lima]","0.0","4.39"
+"Automatización de apis","Obtener libros correctamente","SUCCESS","2023-01-27T02:07:04.717627677-05:00[America/Lima]","0.0","2.3"
+"Automatización de apis","Obtener libros por un id especifico correctamente","SUCCESS","2023-01-27T02:07:07.027874516-05:00[America/Lima]","0.0","1.16"
+"Automatización de apis","Crear una libreria correctamente","SUCCESS","2023-01-27T02:07:08.195207869-05:00[America/Lima]","0.0","1.11"
+"Automatización de apis","Actualiza una reserva actual con una carga útil parcial correctamente","SUCCESS","2023-01-27T02:07:10.50621909-05:00[America/Lima]","0.0","1.1"

@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Automatización de apis","Actualizar un libro correctamente con token actualizado","FAILURE","2023-01-27T02:07:09.312626794-05:00[America/Lima]","0.0","0.62"
+"Automatización de apis","Actualizar un libro correctamente","SUCCESS","2023-01-27T02:07:09.939806822-05:00[America/Lima]","0.0","0.56"
+"Automatización de apis","Eliminar un libro correctamente","FAILURE","2023-01-27T02:07:11.616610292-05:00[America/Lima]","0.0","0.55"
+"Automatización de apis","Eliminar un libro previamente eliminado correctamente","SUCCESS","2023-01-27T02:07:12.177441666-05:00[America/Lima]","0.0","0.53"
