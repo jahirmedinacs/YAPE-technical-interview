@@ -12,11 +12,10 @@
 
 ## YAPE-technical interview Repo - Pasos para Reproducir
 
-- Se incluye el archivo collections.json para Postman con los servicios a probar (RestFullBooker EndPoint)
+- Se incluye el archivo collections.json para Postman con los servicios a probar [(RestFullBooker EndPoint)](https://raw.githubusercontent.com/jahirmedinacs/YAPE-technical-interview/main/Coleccion%20-%20Yape%20-%20RestfulBooker.postman_collection.json)
 - Para la ejecucion del proyecto usar java 17
 - El emulador o dispositivo android en el que se ejecutara la APK de Booking.com debe tener ya instalada la app.
-- Para modificar el puerto, nombre o uidd del emulador revisar el archivo "src/test/java/com/bdd/MobileDriverManager.java"
+- Para modificar el puerto, nombre o uidd del emulador revisar el archivo ```src/test/java/com/bdd/MobileDriverManager.java```
 - La ejecucion via Jenkins se realiza empleando el Runner (JUnit Class que carga todos los escenarios en gerkin)
-
 - Para una video demo de la ejecucion con herramientas CI/CD, revisar el video adjunto.
 
