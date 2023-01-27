@@ -15,8 +15,8 @@ import org.junit.runner.RunWith;
         glue = {"com.bdd"}
 //        ,tags = {"@Restful-Booker"}
 //        ,tags = {"@BookingAutomation"}
-        ,tags = "@Restful-Booker or @BookingAutomation"
-//        ,tags = "@BookingAutomation and @HappyPath"
+//        ,tags = "@Restful-Booker or @BookingAutomation"
+        ,tags = "@BookingAutomation and @HappyPath"
 )
 
 public class RunnerTest {

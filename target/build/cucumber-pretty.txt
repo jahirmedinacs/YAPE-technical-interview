@@ -1,0 +1,5 @@
+
+@BookingAutomation @BookingAutomation @HappyPath
+Esquema del escenario: Carga correcta de Booking.com [90m# src/test/resources/features/BookingAPK.feature:18[0m
+  [32mDado [0m[32mque cargo el aplicativo de Booking[0m            [90m# com.bdd.ui.stepdefinition.BookingStepDefinition.cargoElAplicativoDeGoogleChrome()[0m
+  [32mDado [0m[32mSelecciono y Escribo como destino "[0m[32m[1mcusco[0m[32m"[0m     [90m# com.bdd.ui.stepdefinition.BookingStepDefinition.seleccionoYEscriboDestino(java.lang.String)[0m
