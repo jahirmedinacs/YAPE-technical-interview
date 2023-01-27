@@ -5,6 +5,7 @@ import com.bdd.MobileDriverManager;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.touch.offset.PointOption;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -19,9 +20,8 @@ public class MobileDriverDOM implements IMobileDriverDOM {
         PageFactory.initElements(new AppiumFieldDecorator(MobileDriverManager.getMobileDriver()), this);
     }
 
-    public WebElement esperarHastaElementoVisible(int tiempoSegundos, WebElement elemento) {
-        WebDriverWait webDriverWait = new WebDriverWait(MobileDriverManager.getMobileDriver(), Duration.ofSeconds(tiempoSegundos));
-        return (WebElement) webDriverWait.until(ExpectedConditions.visibilityOf(elemento));
+    public WebElement esperarHastaElementoVisible(long waitingTime, By path) {
+        return new WebDriverWait(MobileDriverManager.getMobileDriver(), Duration.ofSeconds(waitingTime)).until(ExpectedConditions.visibilityOfElementLocated(path));
     }
 
     public void clickElement(WebElement elemento) {

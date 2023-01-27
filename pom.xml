@@ -18,6 +18,10 @@
         <serenity.cucumber.version>3.3.10</serenity.cucumber.version>
         <encoding>UTF-8</encoding>
         <webdriver.driver>appium</webdriver.driver>
+
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+
     </properties>
 
     <dependencies>

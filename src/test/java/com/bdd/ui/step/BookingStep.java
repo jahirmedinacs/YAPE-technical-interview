@@ -6,15 +6,14 @@ import net.thucydides.core.annotations.Step;
 
 public class BookingStep {
 
-    private WelcomeToBookingView welcomeToBookingView() {
-        return new WelcomeToBookingView();
-    }
+    private WelcomeToBookingView welcomeToBookingView = new WelcomeToBookingView();
+
 
     public void seleccionoYEscriboDestino(String destino) {
 //        UtilMobile.screenShotViewPhone();
 
-        welcomeToBookingView().clickDestinationTextBox();
-        welcomeToBookingView().writeDestinationTextBox(destino);
+        welcomeToBookingView.clickDestinationTextBox();
+        welcomeToBookingView.writeDestinationTextBox(destino);
 
 //        UtilMobile.screenShotViewPhone();
     }

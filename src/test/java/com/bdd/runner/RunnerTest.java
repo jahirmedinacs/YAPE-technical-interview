@@ -16,6 +16,7 @@ import org.junit.runner.RunWith;
 //        ,tags = {"@Restful-Booker"}
 //        ,tags = {"@BookingAutomation"}
         ,tags = "@Restful-Booker or @BookingAutomation"
+//        ,tags = "@BookingAutomation and @HappyPath"
 )
 
 public class RunnerTest {
